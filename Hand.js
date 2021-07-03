@@ -9,7 +9,7 @@ class Hand{
        this.height = height;
        this.angle = angle1;
        this.body = Bodies.rectangle(x,y,this.width,this.height,hand_options);
-       this.image = loadImage("./assets/computerArcher.png");
+       this.image = loadImage("computerArcher.png");
 
        World.add(world,this.body);
 
