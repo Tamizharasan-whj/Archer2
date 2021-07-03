@@ -10,7 +10,7 @@ class Hand2{
           this.height = height;
         
           this.angle = angle;
-          this.image = loadImage("./assets/playerArcher.png");
+          this.image = loadImage("playerArcher.png");
           this.body = Bodies.rectangle(x,y,this.width,this.height,options);
 
            
