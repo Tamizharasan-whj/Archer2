@@ -38,7 +38,7 @@ class Hand2{
      
         rotate(this.angle);
       //   rectMode(CENTER);
-        imageMode(CORNER);
+        imageMode(CENTER);
         image(this.image,0,0,this.width,this.height);
         //rect(pos.x,pos.y,this.width,this.height)
         pop();
