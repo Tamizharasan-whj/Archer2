@@ -70,13 +70,14 @@ function draw() {
 
 
 
-  
+
 }
   //if Space (32) key is pressed call shoot function of playerArrow
   function keyReleased(){
   if(keyCode === 32){
     //Call shoot() function and pass angle of playerArcher
-    arrows[arrows.length-1].shoot(bow1.body.angle)
+    arrows[arrows.length-1].shoot(bow1.body.angle);
+    arrow.shoot(playerArcher.body.angle);
   }
   }
 
