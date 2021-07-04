@@ -24,12 +24,12 @@ class Hand2{
         console.log(this.angle);
         push();
         translate(pos.x, pos.y);
-        if (keyIsDown(RIGHT_ARROW) /*&& this.angle < 0*/) {
+        if (keyIsDown(RIGHT_ARROW) && this.angle < -1.2) {
           this.angle += 0.02;
                Matter.Body.setAngle(this.body, angle);
         }
     
-        if (keyIsDown(LEFT_ARROW)/* && this.angle > 180*/) {
+        if (keyIsDown(LEFT_ARROW) && this.angle  > -1.9) {
           this.angle -= 0.02;
                Matter.Body.setAngle(this.body, angle);
         }
