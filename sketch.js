@@ -77,7 +77,7 @@ function draw() {
   if(keyCode === 32){
     //Call shoot() function and pass angle of playerArcher
     arrows[arrows.length-1].shoot(bow1.body.angle);
-    arrow.shoot(playerArcher.body.angle);
+
   }
   }
 
