@@ -23,14 +23,15 @@ class Hand2{
         
         console.log(this.angle);
         push();
-        //Matter.body.Detector.collisions();
         translate(pos.x, pos.y);
         if (keyIsDown(RIGHT_ARROW) /*&& this.angle < 0*/) {
           this.angle += 0.02;
+               Matter.Body.setAngle(this.body, angle);
         }
     
         if (keyIsDown(LEFT_ARROW)/* && this.angle > 180*/) {
           this.angle -= 0.02;
+               Matter.Body.setAngle(this.body, angle);
         }
          
          
